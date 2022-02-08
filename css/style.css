@@ -1,3 +1,7 @@
+:root{
+    --yellow:#F7CA3E;
+
+}
 *{
     font-family: 'Roboto', sans-serif; 
     margin:0;padding:0;
@@ -10,4 +14,140 @@
 
 h1,h3{
     font-family:'oswald', sans-serif;
+}
+*::selection{
+    background: var(--yellow);
+    color: #fff;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x:hidden;
+}
+
+
+body{
+    
+    overflow-x:hidden;
+    /*height: 200rem;*/
+}
+
+html::-webkit-scrollbar{
+    width: 1.4rem;
+}
+
+html::-webkit-scrollbar-track{
+    background: #333;
+}
+
+html::-webkit-scrollbar-thumb{
+    background: var(--yellow);
+}
+header{
+    position: fixed;
+    top:0;left:0;
+    z-index: 1000;
+    width: 100%;
+    background: #fff;
+    padding: 1.5rem 10%;
+    box-shadow: 0.3rem 2rem rgba(0, 0, 0,0.1);
+    display: flex;
+    align-items:center ;
+    justify-content: space-between;
+}
+
+header .logo img{
+    height: 5rem;
+}
+
+header .narbar ul{
+    display: flex;
+    align-items:center ;
+    justify-content: center;
+    list-style: none;
+
+}
+header .narbar ul li{
+    margin-left: 3rem;
+
+}
+header .narbar ul li a{
+    font-size: 1.7rem;
+    color:#666
+}
+header .narbar ul li a.active,
+header .narbar ul li a:hover{
+    color:var(--yellow);
+}
+header #menu-bar{
+    font-size:3rem ;
+    color: #666;
+    cursor: pointer;
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media queries*/
+
+@media (max-width: 768px){
+    html{
+        font-size: 55%;
+    }
+
+    header #menu-bar{
+        display: block;
+    }
+
+    header .narbar{
+        position: fixed;
+        top:8rem; left:0;
+        width:100%;
+        background:var(--yellow);
+        border-top: .2rem solid rgba(0,0,0,.1);
+        transform: scaleY(0);
+        transform-origin: top;
+        opacity: 0;
+        
+    }
+    header .narbar ul{
+        flex-flow: column;
+        padding: 2rem;
+    }
+    header .narbar ul li{
+        margin:1.5rem;
+        width:100%;
+
+
+    }
+    header .narbar ul li a{
+        display:block;
+        color: #fff;
+        padding-left: 2rem;
+        border-left: .2rem solid #fff;
+        font-size: 2rem;
+    }
+
+    header .narbar ul li a:hover,
+    header .narbar ul li a.active{
+        color: #333;
+        border-color: #333;
+
+    }
 }
