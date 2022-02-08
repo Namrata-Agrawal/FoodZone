@@ -43,6 +43,12 @@ html::-webkit-scrollbar-track{
 html::-webkit-scrollbar-thumb{
     background: var(--yellow);
 }
+ section{
+     min-height: 100vh;
+     padding:1rem 10%;
+     padding-top: 8.5rem;
+ }
+
 header{
     position: fixed;
     top:0;left:0;
