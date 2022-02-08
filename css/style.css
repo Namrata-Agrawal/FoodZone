@@ -150,4 +150,14 @@ header #menu-bar{
         border-color: #333;
 
     }
+    .fa-times{
+        transform: rotate(180deg);
+    }
+    header .narbar.nav-toggle{
+        transform:scaleY(1);
+        
+        opacity: 1;
+    
+    }
+
 }
