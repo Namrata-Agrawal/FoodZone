@@ -187,7 +187,7 @@ header #menu-bar{
     flex: 1 1 40rem;
     height: 50rem;
     /*background: url(../main/images/about-frame-img.png),url(../main/images/about-img.jpg) no-repeat;*/
-    background: url(../FoodZone/images/about-frame-img.png),url(../FoodZone/images/about-img.jpg) no-repeat;
+    background: url(../images/about-frame-img.png),url(../images/about-img.jpg) no-repeat;
     background-size: cover;
     background-position: center;
     background-blend-mode: screen;
